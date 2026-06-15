@@ -1,118 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>LabSaarthi | Intelligent Lab Infrastructure</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Link to your new Theme CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LabSaarthi - The Operating System for Bharat's Labs</title>
   <link rel="stylesheet" href="theme.css">
 </head>
-
 <body>
 
-  <!-- Header -->
   <header class="site-header">
-    <div class="container header-wrap">
-      <a href="/" class="logo-wrap">
-        <img src="logo.png" alt="LabSaarthi">
+    <div class="header-wrapper">
+      <a href="#" class="site-logo">
+        <img src="https://cdn.shopify.com/s/files/1/0728/9343/1919/files/Labsaarthi_Logo.png?v=1779828768" alt="LabSaarthi Logo">
       </a>
-      <nav class="desktop-nav">
-        <a href="#home">Home</a>
+      
+      <button class="mobile-toggle" data-mobile-toggle aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
         <a href="#about">About</a>
+        <a href="#why-labsaarthi">Why LabSaarthi</a>
         <a href="#capabilities">Capabilities</a>
-        <a href="#why-labsaarthi">Why Us</a>
         <a href="#leadership">Leadership</a>
+        <button class="btn header-cta mobile-cta" data-open-demo>Request Demo</button>
       </nav>
-      <button class="primary-btn demo-trigger">Book a Demo</button>
+
+      <button class="btn header-cta" data-open-demo>Request Demo</button>
     </div>
   </header>
 
-  <main id="main-page">
-    
-    <!-- Hero / Home Section -->
-    <section id="home" class="hero-section">
-      <div class="container">
-        <h1>The Operating System for Bharat’s Labs.</h1>
-        <p>Connecting diagnostics, clinical workflows, and AI-enabled reporting.</p>
-        <button class="primary-btn demo-trigger">Request Demo</button>
-      </div>
-    </section>
+  <section class="hero" id="home">
+    <div class="page-width hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">The</p>
+        <h1 class="h1">Operating System<br><span class="accent">for Bharat's Labs.</span></h1>
+        <p class="lead">Connects diagnostics, clinical workflows, and AI-enabled reporting into a single, scalable platform purpose-built for hospitals, labs, and healthcare networks across India.</p>
+        
+        <div class="hero__actions">
+          <button class="btn" data-open-demo>Request Demo</button>
+          <a href="#capabilities" class="btn btn--secondary">Explore Platform</a>
+        </div>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <div class="container">
-        <h2>Who We Are</h2>
-        <p>LabSaarthi is a next-generation healthcare operations platform purpose-built for India.</p>
-      </div>
-    </section>
-
-    <!-- Capabilities Section -->
-    <section id="capabilities" class="capabilities-section">
-      <div class="container">
-        <h2>Platform Capabilities</h2>
-        <div class="grid-layout">
-          <!-- Add capability details here -->
-          <div class="card">LIMS Integration</div>
-          <div class="card">AI Reporting</div>
-          <div class="card">Smart Tracking</div>
+        <div class="trust">
+          <p>Trusted by leading institutions across India</p>
+          <div class="trust__logos">
+            <span>AIIMS</span> • <span>NHSRC</span> • <span>Digital India</span>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Why LabSaarthi Section -->
-    <section id="why-labsaarthi" class="why-section">
-      <div class="container">
-        <h2>Why Choose LabSaarthi</h2>
-        <p>Infrastructure that thinks. Workflows that work.</p>
+      
+      <div class="dashboard">
+        <div class="dashboard__rail">
+          <div class="rail-dot is-active"></div>
+          <div class="rail-dot"></div>
+          <div class="rail-dot"></div>
+        </div>
+        <div class="dashboard__body">
+          <h3>Live Network Status</h3>
+          <div class="dash-grid">
+            <div class="dash-card">
+               Reports Delivered
+               <strong>5 Cr+</strong>
+               <div class="mini-chart"></div>
+            </div>
+            <div class="dash-card">
+               Active Deployments
+               <strong>1,200+</strong>
+               <div class="bar-chart"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <!-- Leadership Section -->
-    <section id="leadership" class="leadership-section">
-      <div class="container">
-        <h2>Our Leadership</h2>
-        <!-- Add leadership profiles here -->
-      </div>
-    </section>
-
-    <!-- Demo Section -->
-    <section id="demo" class="demo-section">
-      <div class="container">
-        <h2>Ready to transform your lab?</h2>
-        <button class="primary-btn demo-trigger">Book a Demo Now</button>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer Section -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 LabSaarthi. All rights reserved.</p>
     </div>
-  </footer>
+  </section>
 
-  <!-- Demo Modal & Form Snippet -->
-  <div id="demo-modal" class="modal-overlay" style="display: none;">
-    <div class="modal-content">
-      <button class="close-modal">&times;</button>
-      <h3>Book Your Demo</h3>
-      <form id="demo-form" action="#" method="POST">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Work Email" required>
-        <input type="text" placeholder="Lab/Hospital Name" required>
-        <button type="submit" class="primary-btn">Submit Request</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Link to your new Theme JS -->
   <script src="theme.js"></script>
 </body>
 </html>
